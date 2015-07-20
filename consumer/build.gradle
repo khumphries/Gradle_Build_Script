@@ -1,0 +1,26 @@
+//this gets the plugin that was saved somewhere on the computer
+//you will have to change the url path to where ever your maven repo is setup
+//by default in the project_src/repo
+buildscript {
+    repositories {
+        maven {
+            url "file:///Users/khumphries/Gradle_Example/mytest2/repo"
+        }
+    }
+    dependencies {
+        classpath group: 'org.eoti',
+                   name: 'MyJavaPlugin',
+                version: '1.0-SNAPSHOT'
+    }
+}
+
+//This is where you put the fileName you want to search for
+project.ext.fileName="Helloworld.java"
+//This is the pulgin that it is calling
+apply plugin: 'javaTask-plugin'
+
+
+
+
+
+

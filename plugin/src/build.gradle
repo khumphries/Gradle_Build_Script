@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        maven {
+            url "file:///Users/khumphries/Gradle_Example/mytest2/repo"
+        }
+    }
+    dependencies {
+        classpath group: 'org.eoti',
+                   name: 'MyJavaPlugin',
+                version: '1.0-SNAPSHOT'
+    }
+}
+apply plugin: 'test-plugin'
+
+task checkitout(type: org.eoti.gradle.MyJavaTask) {
+    println("running consumer task!")
+}
