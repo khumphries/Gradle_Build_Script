@@ -12,3 +12,7 @@ buildscript {
     repositories {
         maven {
             url "file:///Add the path here."
+
+And then to run the plugin from whatever directory you want you have to run the command "gradle javaTask"
+
+This will look for the file specified in the build.gradle.
