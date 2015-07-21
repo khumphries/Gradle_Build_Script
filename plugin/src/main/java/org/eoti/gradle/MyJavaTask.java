@@ -39,9 +39,8 @@ public class MyJavaTask extends DefaultTask {
         	System.out.println("\nThe path to the directory being checked is " +extension.getGradleDir() + "\n");
         	//checks for the names of the files
             extension.setTest(new File(extension.getGradleDir()).list());
-            //String[] temp = extension.getTest();
+            
             for(int i=0;i<extension.getTest().length;i++) {
-            	//if(test[i].substring(test[i].lastIndexOf(".") + 1, test[i].length()).equals("java")) {
             	//checks for the value input
             	if(extension.getTest()[i].equals(extension.getFileName())) {
             	  	findBooleanValue(extension.getFileName());
