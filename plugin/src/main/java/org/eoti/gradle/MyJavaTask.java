@@ -75,7 +75,7 @@ public class MyJavaTask extends DefaultTask {
             		Matcher matcher = pattern.matcher(file.nextLine());
             		if(matcher.find()) {
             			System.out.println("\t" +matcher.group(0));
-            			throw new GradleException("error occurred");
+            			throw new GradleException("Boolean flag was found and build was aborted.");
 					}
 				}
 				else{
