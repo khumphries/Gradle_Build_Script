@@ -19,7 +19,7 @@ public class MyJavaExtension
     public String[] getTest(){return test;}
     public void setTest(String[] test){this.test = test;}
 
-    private String fileName = "NOT_A_FILE";
+    private String fileName = "NO_FILE_INPUT";
 
     public String getFileName(){return fileName;}
     public void setFileName(String fileName){this.fileName = fileName;}

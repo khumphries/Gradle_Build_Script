@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="org.eoti" module="MyJavaPlugin" revision="1.0-SNAPSHOT" status="integration" publication="20150720101502">
+  <info organisation="org.eoti" module="MyJavaPlugin" revision="1.0-SNAPSHOT" status="integration" publication="20150728150106">
     <description/>
   </info>
   <configurations>

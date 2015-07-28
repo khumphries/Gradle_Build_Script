@@ -4,6 +4,7 @@ package org.eoti.gradle;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.api.GradleException;
 
 import java.io.File;
 import java.io.IOException;
@@ -74,6 +75,7 @@ public class MyJavaTask extends DefaultTask {
             		Matcher matcher = pattern.matcher(file.nextLine());
             		if(matcher.find()) {
             			System.out.println("\t" +matcher.group(0));
+            			throw new GradleException("error occurred");
 					}
 				}
 				else{
